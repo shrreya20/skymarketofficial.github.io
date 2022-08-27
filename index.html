@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sky Market</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">SkY MaRkEt</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>SKY MARKET</h2>
+            <h3>Reaching The Sky</h3>
+            <p>"Take a risk and keep testing,<br>
+                because what works today won't work<br>
+                tomorrow, but what worked yesterday may work again"</p>
+            <a href="#">Experience</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="https://img.icons8.com/arcade/64/000000/experimental-facebook-new-arcade.png"/></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/arcade/64/000000/experimental-twitter-arcade.png"/></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">MARKET</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggele = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggele.addEventListener('click', () => {
+            menuToggele.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script> 
+
+</body>
+</html>
